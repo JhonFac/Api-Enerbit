@@ -1,0 +1,44 @@
+OPTIONAL 
+
+## Build Container and image in Docker 
+docker-compose -f docker-compose.yml build
+
+## Run image in Docker 
+docker-compose -f docker-compose.yml up
+
+## RUN PROJECT ONLY IN PYTHON
+
+Before to start, you need to install the dependencies:
+`pip install -r requirements.txt`
+
+Next, you need to create the database:
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+Finally, you need to create the superuser (optional):
+`python manage.py createsuperuser`
+
+To have a local env without docker it is recommended to use the following commands:
+
+- `python3 -m venv .env`
+- `. .env-mts/bin/activate`
+- `pip install -r requirements.txt`
+
+## RUN PROJECT
+`python manage.py runserver`
+
+
+To be able to see the documentation in swagger in the url:
+`http://127.0.0.1:8000/swagger/`
+
+
+
+## cURL to consume some services 
+
+- orders_between_dates
+
+curl -X 'GET' \
+  'http://127.0.0.1:8000/orders_between_dates/?since=2023-11-02&until=2023-11-04&status=Done' \
+  -H 'accept: application/json' \
+
+

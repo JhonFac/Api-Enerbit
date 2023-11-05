@@ -13,6 +13,10 @@ RUN apk add --update --no-cache --virtual .tmp-build-deps \
 RUN pip install -r /requirements.txt
 RUN apk del .tmp-build-deps
 
+RUN pip install drf-yasg -U
+RUN pip install redis
+
+
 RUN cp /usr/share/zoneinfo/America/Bogota /etc/localtime
 
 RUN mkdir /code

@@ -1,0 +1,25 @@
+# Directorios
+__pycache__/
+env/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Archivos de usuario
+db.sqlite3
+.DS_Store
+
+# Entorno virtual / Dependencias de Python
+venv/
+pip-log.txt
+
+# Archivos de medios
+media/
+
+# Archivos de configuración
+local_settings.py
+
+# Si usas Docker
+.dockerignore
+.env

@@ -22,3 +22,5 @@ RUN cp /usr/share/zoneinfo/America/Bogota /etc/localtime
 RUN mkdir /code
 WORKDIR /code
 COPY . /code/
+
+CMD ["sh", "/scripts/entrypoint.sh"]

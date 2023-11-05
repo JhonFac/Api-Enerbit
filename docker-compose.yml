@@ -13,5 +13,3 @@ services:
             - PGHOST=containers-us-west-175.railway.app
             - PGPORT=7892
             - PGDATABASE=railway
-        command: >
-            sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"

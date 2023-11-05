@@ -13,3 +13,4 @@ echo "$(date): Ejecutando proceso"
 
 
 gunicorn api.wsgi:application --bind 0.0.0.0:$PORT --certfile ./fullchain.pem --keyfile ./privkey.pem
+# gunicorn api.wsgi:application --bind 0.0.0.0:8000 --certfile ./fullchain.pem --keyfile ./privkey.pem

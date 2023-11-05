@@ -15,7 +15,7 @@ RUN apk del .tmp-build-deps
 
 RUN pip install drf-yasg -U
 RUN pip install redis
-
+RUN pip install gunicorn
 
 RUN cp /usr/share/zoneinfo/America/Bogota /etc/localtime
 

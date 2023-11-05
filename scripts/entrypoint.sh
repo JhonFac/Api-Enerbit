@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-start Container
+# start Container
 echo "Contenedor iniciado"
 echo "$(date): Ejecutando proceso"
 

@@ -172,5 +172,6 @@ SWAGGER_SETTINGS = {
 }
 
 CORS_ALLOWED_ORIGINS = [
+    "http://api-enerbit-production.up.railway.app",
     "https://api-enerbit-production.up.railway.app",
 ]

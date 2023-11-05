@@ -13,4 +13,3 @@ services:
             - PGHOST=containers-us-west-175.railway.app
             - PGPORT=7892
             - PGDATABASE=railway
-            - HOST=https://api-enerbit-production.up.railway.app/
